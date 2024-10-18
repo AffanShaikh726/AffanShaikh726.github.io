@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--favicons-->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <title>affanShaikh</title>
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!--M icons-->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <!-- Compiled and minified materialize CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <!--main css-->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="headerani.css" />
+        <!-- Compiled and minified materialize JavaScript -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+            defer
+        ></script>
+        <!--Hide.js-->
+        <script src="hide.js" defer></script>
+        <!--main js-->
+        <script src="loader.js" defer></script>
+    </head>
+
+    <body>
+        <section class="fNavbar scrollspy" id="home">
+            <nav class="nav-fixed">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"> &copy;affanShaikh </a>
+                    <a
+                        href="#"
+                        data-target="mobile-demo"
+                        class="sidenav-trigger"
+                    >
+                        <i class="material-icons" style="font-size: 30px"
+                            >menu</i
+                        >
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <ul>
+                                <a href="#home" class="myTabs waves-effect">
+                                    Home
+                                    <li>
+                                        <i class="material-icons medium"
+                                            >home</i
+                                        >
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="#projects" class="myTabs waves-effect">
+                                    projects
+                                    <li>
+                                        <i class="material-icons medium">
+                                            assignment
+                                        </i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="#about" class="myTabs waves-effect">
+                                    About
+                                    <li>
+                                        <i class="material-icons medium"
+                                            >people</i
+                                        >
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="#contact" class="myTabs waves-effect">
+                                    Contact
+                                    <li>
+                                        <i class="material-icons medium"
+                                            >call</i
+                                        >
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a
+                                    class="myTabs waves-effect"
+                                    onclick="fnChangeTheme();"
+                                >
+                                    <span class="coffeeMode">Dark Mode</span>
+                                    <li>
+                                        <span class="modeIcon">
+                                            <i class="material-icons medium">
+                                                panorama_fish_eye
+                                            </i>
+                                        </span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                    <a href="#home" onclick="fnCloseSidenav();" class="myTabs">
+                        Home
+                        <i class="material-icons small">home</i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#projects"
+                        onclick="fnCloseSidenav();"
+                        class="myTabs"
+                    >
+                        Projects
+                        <i class="material-icons small">assignment</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" onclick="fnCloseSidenav();" class="myTabs">
+                        About
+                        <i class="material-icons small">people</i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        onclick="fnCloseSidenav();"
+                        class="myTabs"
+                    >
+                        Contact
+                        <i class="material-icons small">call</i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onclick="fnCoffeeModeForMobile();"
+                        class="myTabs coffeeMode"
+                    >
+                        <span class="modeIcon">
+                            <i
+                                class="material-icons small"
+                                style="
+                                    color: rgb(104, 104, 104);
+                                    transform: translateY(25%);
+                                "
+                            >
+                                panorama_fish_eye
+                            </i>
+                        </span>
+                        <span
+                            class="coffeeMode"
+                            style="margin-left: 25px !important"
+                            >Dark Mode
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="homeSpace"></section>
+
+        <div class="fixed-action-btn toolbar">
+            <a class="btn-floating btn-large">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul class="hideList">
+                <li>
+                    <a href="#home" onclick="fnCloseSidenav();" class="myTabs">
+                        <i class="material-icons small">home</i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#projects"
+                        onclick="fnCloseSidenav();"
+                        class="myTabs"
+                    >
+                        <i class="material-icons small">assignment</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" onclick="fnCloseSidenav();" class="myTabs">
+                        <i class="material-icons small">people</i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        onclick="fnCloseSidenav();"
+                        class="myTabs"
+                    >
+                        <i class="material-icons small">call</i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="myTabs coffeeMode"
+                        onclick="fnCoffeeModeForMobile();"
+                    >
+                        <span class="modeIcon">
+                            <i class="material-icons small">
+                                panorama_fish_eye
+                            </i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="description" style="height: 100vh">
+            <div class="transparent center">
+                <div
+                    class="header"
+                    style="
+                        font-family: 'Poppins', 'Times New Roman', Times, serif;
+                        font-weight: bold;
+                        margin-bottom: 3rem;
+                    "
+                >
+                    <div class="keyboard">
+                        <span class="key">H</span>
+                        <span class="key">E</span>
+                        <span class="key">L</span>
+                        <span class="key">L</span>
+                        <span class="key">O</span>
+                    </div>
+                </div>
+                <div class="row container center">
+                    <div
+                        class="mediaMarginTop col center l4 s12"
+                        style="
+                            padding-bottom: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        "
+                    >
+                        <div class="swing">
+                            <img
+                                src="images/affan.jpg"
+                                style="object-fit: contain; border-radius: 50%"
+                                height="200"
+                                width="auto"
+                                alt="Image not found"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="move col center l8 s12"
+                        style="
+                            font-weight: bold;
+                            font-family: 'Baloo Paaji 2', 'Times New Roman',
+                                Times, serif;
+                            font-size: 1.5rem;
+                            height: 14rem;
+                        "
+                    >
+                        <p class="toLeft">
+                            there, NICE to see you here !! I am
+                            <span
+                                style="
+                                    font-size: 1.7rem;
+                                    color: #3c8738;
+                                    font-family: 'Poppins';
+                                "
+                                >Affan Shaikh</span
+                            >, a Web Developer. I love to code and I am
+                            passionate about it. I am a self-taught developer
+                            and I love to learn new things. Here are some of my
+                            PROJECTS
+                        </p>
+                    </div>
+                    <a
+                        id="pulse"
+                        class="btn-floating btn-large pulse"
+                        href="#projects"
+                        ><i class="material-icons medium">
+                            arrow_downward
+                        </i></a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="fCards" style="padding-top: 20px">
+            <div class="row" style="padding-left: 5vw; padding-right: 5vw">
+                <div class="col s12 m12 l4" style="padding-bottom: 50px">
+                    <div class="card">
+                        <div
+                            class="card-image waves-effect waves-block waves-light"
+                        >
+                            <a
+                                href="https://github.com/mohdAffancodes/brick_breaker"
+                            >
+                                <img
+                                    src="images/card1.png"
+                                    class="card activator scrollspy"
+                                    id="projects"
+                                    style="margin-top: 0"
+                                    height="200"
+                                    width="auto"
+                                    alt="Image not found"
+                            /></a>
+                        </div>
+                        <div class="card-content">
+                            <span
+                                class="card-title activator white-text text-darken-4"
+                            >
+                                Breaker Deskstop
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div
+                            class="card-reveal"
+                            style="background-color: #040d12"
+                        >
+                            <span class="card-title white-text text-darken-4">
+                                Breaker Deskstop
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p
+                                class="text-darken-4"
+                                style="
+                                    font-family: 'Baloo Paaji 2',
+                                        'Times New Roman', Times, serif;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: #d3d4d0;
+                                "
+                            >
+                                I was inspired by Steve Jobs movie when i saw
+                                that this game was creates by Steve Jobs and
+                                Steve Wozniak. I was intrigued and wanted to
+                                create this game too. For this I didn't use the
+                                usual game development tools like Python or Java
+                                becaouse i was learning javascript at that time.
+                                I used ELECTRONJS to convert it to a deskstop
+                                app which works across windows,mac and linux.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4" style="padding-bottom: 50px">
+                    <div class="card">
+                        <div
+                            class="card-image waves-effect waves-block waves-light"
+                        >
+                            <a href="https://blog-book.netlify.app/">
+                                <img
+                                    src="images/card2.png"
+                                    class="card activator"
+                                    style="margin-top: 0"
+                                    height="200"
+                                    width="auto"
+                                    alt="Image not found"
+                            /></a>
+                        </div>
+                        <div class="card-content">
+                            <span
+                                class="card-title activator white-text text-darken-4"
+                            >
+                                Blogbook
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div
+                            class="card-reveal"
+                            style="background-color: #040d12"
+                        >
+                            <span class="card-title white-text text-darken-4">
+                                Blogbook
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p
+                                class="text-darken-4"
+                                style="
+                                    font-family: 'Baloo Paaji 2',
+                                        'Times New Roman', Times, serif;
+                                    font-size: 16px;
+                                    font-weight: 50;
+                                    color: #d3d4d0;
+                                "
+                            >
+                                This was my first project which had
+                                authentication multiple pages, client side
+                                rendering using react, design fundamentals. I
+                                used firebase for the backend and firestore for
+                                the database. I used react-router for routing
+                                and materialize css for the design. I also used
+                                react hooks for the first time in this project.
+                                I used loading animations which are super cool
+                                signup and see for Yourself !!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4" style="padding-bottom: 50px">
+                    <div class="card">
+                        <div
+                            class="card-image waves-effect waves-block waves-light"
+                        >
+                            <a href="https://react-movie-search.pages.dev/"
+                                ><img
+                                    src="images/card3.png"
+                                    class="card activator"
+                                    style="margin-top: 0"
+                                    height="200"
+                                    width="auto"
+                                    alt="Image not found"
+                            /></a>
+                        </div>
+                        <div class="card-content">
+                            <span
+                                class="card-title activator white-text text-darken-4"
+                            >
+                                Movie Search API
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div
+                            class="card-reveal"
+                            style="background-color: #040d12"
+                        >
+                            <span class="card-title white-text text-darken-4">
+                                Movie Search API
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p
+                                class="text-darken-4"
+                                style="
+                                    font-family: 'Baloo Paaji 2',
+                                        'Times New Roman', Times, serif;
+                                    font-size: 16px;
+                                    font-weight: 50;
+                                    color: #d3d4d0;
+                                "
+                            >
+                                I built this when i was learning about APIs.
+                                This i s simple webapp which sends a request to
+                                the API and fetches the data and displays it on
+                                the screen. I used the OMDB API for this
+                                project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4" style="padding-bottom: 50px">
+                    <div class="card">
+                        <div
+                            class="card-image waves-effect waves-block waves-light"
+                        >
+                            <a href="https://mohdaffancodes.github.io/Slider/"
+                                ><img
+                                    src="images/card4.png"
+                                    class="card activator"
+                                    style="margin-top: 0"
+                                    height="200"
+                                    width="auto"
+                                    alt="Image not found"
+                            /></a>
+                        </div>
+                        <div class="card-content">
+                            <span
+                                class="card-title activator white-text text-darken-4"
+                            >
+                                Stack Game
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div
+                            class="card-reveal"
+                            style="background-color: #040d12"
+                        >
+                            <span class="card-title white-text text-darken-4">
+                                Stack Game
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p
+                                class="text-darken-4"
+                                style="
+                                    font-family: 'Baloo Paaji 2',
+                                        'Times New Roman', Times, serif;
+                                    font-size: 16px;
+                                    font-weight: 50;
+                                    color: #d3d4d0;
+                                "
+                            >
+                                For making this game I used a different approach
+                                which was more difficult and i learned my
+                                lesson. I used actual html tags ad game
+                                elements. This madde me want to pick up python
+                                and other game development tools for simple
+                                games but i was more interested in web
+                                development so i continued with that.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l4" style="padding-bottom: 50px">
+                    <div class="card">
+                        <div
+                            class="card-image waves-effect waves-block waves-light"
+                        >
+                            <a
+                                href="https://marketplace.visualstudio.com/items?itemName=mohdAffancodes.darkai-theme"
+                                ><img
+                                    src="images/card5.png"
+                                    class="card activator"
+                                    style="margin-top: 0"
+                                    height="200"
+                                    width="auto"
+                                    alt="Image not found"
+                            /></a>
+                        </div>
+                        <div class="card-content">
+                            <span
+                                class="card-title activator white-text text-darken-4"
+                            >
+                                Darkai theme
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div
+                            class="card-reveal"
+                            style="background-color: #040d12"
+                        >
+                            <span class="card-title white-text text-darken-4">
+                                Darkai theme
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p
+                                class="text-darken-4"
+                                style="
+                                    font-family: 'Baloo Paaji 2',
+                                        'Times New Roman', Times, serif;
+                                    font-size: 16px;
+                                    font-weight: 50;
+                                    color: #d3d4d0;
+                                "
+                            >
+                                I created this theme when i was learning about
+                                VS code themes. I wanted to create a theme which
+                                was dark and had a good contrast. I used the
+                                theme in my own VS code and it was very helpful.
+                                I also published it on the marketplace for
+                                others to use. It has been downloaded more than
+                                300 times. I am very happy with the response.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4" style="padding-bottom: 50px">
+                    <div class="card">
+                        <div
+                            class="card-image waves-effect waves-block waves-light"
+                        >
+                            <a
+                                href="https://github.com/mohdAffancodes/mohdAffancodes.github.io"
+                                ><img
+                                    src="images/card6.png"
+                                    class="card activator"
+                                    style="margin-top: 0"
+                                    height="200"
+                                    width="auto"
+                                    alt="Image not found"
+                            /></a>
+                        </div>
+                        <div class="card-content">
+                            <span
+                                class="card-title activator white-text text-darken-4"
+                            >
+                                Early Projects
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div
+                            class="card-reveal"
+                            style="background-color: #040d12"
+                        >
+                            <span class="card-title white-text text-darken-4">
+                                Early Projects
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p
+                                class="text-darken-4"
+                                style="
+                                    font-family: 'Baloo Paaji 2',
+                                        'Times New Roman', Times, serif;
+                                    font-size: 16px;
+                                    font-weight: 50;
+                                    color: #d3d4d0;
+                                "
+                            >
+                                These projects were my gateway to the world of
+                                github and the endless possibleities of web
+                                development. I created these projects when i was
+                                learning about html, css and javascript. I was
+                                very excited to see my projects on the internet
+                                and i wanted to share them with the world. I am
+                                very proud of these projects because they were
+                                my first projects and they were the stepping
+                                stones to my web development journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fAbout scrollspy" id="about">
+            <div class="transparent center">
+                <div class="row container">
+                    <h2
+                        class="header toLeft"
+                        style="font-family: 'Pacifico', cursive"
+                    >
+                        About Me
+                    </h2>
+                    <p class="grey-text text-darken-4 readMoreText toLeft">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo accusantium consequatur quisquam, illum autem harum
+                        nulla? Nesciunt pariatur laudantium rerum mollitia
+                        quisquam. Delectus repellendus tempora enim. Itaque
+                        molestiae facere accusamus, alias laudantium
+                        consequuntur vero cum odio officia veniam dolorum
+                        dignissimos aut mollitia suscipit labore minima possimus
+                        sed perferendis, est optio.
+                    </p>
+                    <a
+                        href="javascript:void(0);"
+                        class="btn wave-effect waves-light readMoreBtn"
+                        style="background: #040d12 !important"
+                        onclick="fnReadMore();"
+                    >
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="fServices section">
+            <div class="row" style="padding-left: 50px; padding-right: 50px">
+                <div class="col s6 m4 l4 center" style="padding: 10px">
+                    <i class="large material-icons icon-coffee">local_dining</i>
+                    <h5 class="header">Variety of Coffee</h5>
+                </div>
+                <div class="col s6 m4 l4 center" style="padding: 10px">
+                    <i class="large material-icons icon-coffee">watch_later</i>
+                    <h5 class="header">Quick Coffee</h5>
+                </div>
+                <div class="col s12 m4 l4 center" style="padding: 10px">
+                    <i class="large material-icons icon-coffee">favorite</i>
+                    <h5 class="header">Loved by Many</h5>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="footer scrollspy"
+            id="contact"
+            style="padding-top: 10px !important"
+        >
+            <footer class="footer-one">
+                <div class="container">
+                    <div class="row center">
+                        <div class="col l6 s12">
+                            <h4 class="white-text">Contact ME</h4>
+                            <span class="grey-text">
+                                <i class="material-icons tiny">place</i>
+                                SRM University, Chennai, Tamil Nadu, INDIA </span
+                            ><br />
+                            <span class="grey-text">
+                                <i class="material-icons tiny">call</i>
+                                +91 9307745800
+                            </span>
+                        </div>
+                        <div class="col l6 s12">
+                            <h4 class="white-text">My Socials</h4>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="mailto:moaffan726@gmail.com"
+                                        class="grey-text"
+                                    >
+                                        @Email
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.instagram.com/solas0726/"
+                                        class="grey-text"
+                                    >
+                                        @Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-two" style="margin-top: 0 !important">
+                    <div class="container">
+                        <div
+                            class="row footer-two center"
+                            style="margin-bottom: 0 !important"
+                        >
+                            <div class="col l6 s12">
+                                <p
+                                    class="white-text"
+                                    style="font-family: 'Pacifico', cursive"
+                                >
+                                    &copy;affanShaikh
+                                </p>
+                            </div>
+                            <div class="col l6 s12">
+                                <p class="white-text">
+                                    Designed by &copy;<a
+                                        href="https://github.com/AffanShaikh726"
+                                        >AffanShaikh726</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>
