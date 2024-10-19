@@ -157,6 +157,8 @@ nav .brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 110vh;
 }
 .swing {
     border-radius: 50%;
@@ -202,4 +204,11 @@ nav .brand-logo {
     100% {
         transform: rotate(-3deg);
     }
+}
+.sticky-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Pacifico", cursive;
 }

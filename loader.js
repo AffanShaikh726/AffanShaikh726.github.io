@@ -13,9 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const hello = document.getElementsByClassName("key");
     const toLeft = document.getElementsByClassName("toLeft");
     const colm = document.getElementsByClassName("col s12 m12 l4");
+    const stickyBtm = document.querySelector(".sticky-bottom");
+    const mobProj = document.querySelector(".mobProj");
     let i = 0;
 
     if (w < 1000) {
+        if (w < 600) {
+            stickyBtm.style.display = "none";
+            mobProj.style.fontFamily = "'Pacifico', cursive";
+            mobProj.style.fontSize = "30px";
+        }
         pulseBtn.style.display = "none";
         for (i = 0; i < hello.length; i++) {
             hello[i].style.fontSize = "30vw";
