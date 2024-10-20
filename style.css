@@ -110,17 +110,8 @@ nav .brand-logo {
     .homeSpace {
         height: 56px;
     }
-
-    .slider {
-        height: 300px !important;
-    }
-    .slides {
+    .description {
         height: 100% !important;
-    }
-    .slider .indicators {
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
-        top: 100% !important;
     }
     .valign-wrapper {
         justify-content: center;
@@ -131,10 +122,6 @@ nav .brand-logo {
     .parallax-container {
         min-height: 150px;
     }
-    .parallaxImg {
-        width: 100%;
-    }
-    /**/
     .sidenav-trigger {
         visibility: hidden;
         pointer-events: none;

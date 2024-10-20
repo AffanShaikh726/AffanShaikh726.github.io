@@ -70,17 +70,6 @@ function fnCloseSidenav() {
     instanceSidenav.close();
 }
 
-function fnSlider() {
-    //.Slider code
-    let elem = document.querySelector(".slider");
-    let instanceSlider = M.Slider.init(elem, {
-        full_width: true,
-        indicators: true,
-    });
-    //.Getting the slider going
-    instanceSlider.next();
-}
-
 function fnCoffeeModeForMobile() {
     fnCloseSidenav();
     fnChangeTheme();
